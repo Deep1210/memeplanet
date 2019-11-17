@@ -58,19 +58,19 @@ public class CategoryPageLayout implements View.OnClickListener, CategoryButtonH
 
         itemView.findViewById(R.id.img_setting).setOnClickListener(this);
 
-        itemView.findViewById(R.id.searchtext1).setOnClickListener(this);
-
-        itemView.findViewById(R.id.bookmarkbtn).setOnClickListener(this);
-        itemView.findViewById(R.id.bookmarkbtn).setActivated(PostListTypeHelper.getBookmarkStatus());
-
-        itemView.findViewById(R.id.mylikesbtn).setOnClickListener(this);
-        itemView.findViewById(R.id.mylikesbtn).setActivated(PostListTypeHelper.getLikeStatus());
-
-        itemView.findViewById(R.id.mywiresbtn).setOnClickListener(this);
-        itemView.findViewById(R.id.mywiresbtn).setActivated(PostListTypeHelper.getWiredStatus());
-
-
-        itemView.findViewById(R.id.customizefeedbtn).setOnClickListener(this);
+//        itemView.findViewById(R.id.searchtext1).setOnClickListener(this);
+//
+//        itemView.findViewById(R.id.bookmarkbtn).setOnClickListener(this);
+//        itemView.findViewById(R.id.bookmarkbtn).setActivated(PostListTypeHelper.getBookmarkStatus());
+//
+//        itemView.findViewById(R.id.mylikesbtn).setOnClickListener(this);
+//        itemView.findViewById(R.id.mylikesbtn).setActivated(PostListTypeHelper.getLikeStatus());
+//
+//        itemView.findViewById(R.id.mywiresbtn).setOnClickListener(this);
+//        itemView.findViewById(R.id.mywiresbtn).setActivated(PostListTypeHelper.getWiredStatus());
+//
+//
+//        itemView.findViewById(R.id.customizefeedbtn).setOnClickListener(this);
 
     }
 
@@ -91,27 +91,27 @@ public class CategoryPageLayout implements View.OnClickListener, CategoryButtonH
              * Search Bar Click
              */
 
-            case in.incourt.incourtnews.R.id.searchtext1:
-                openSearchActivity();
-                break;
-
-            case R.id.bookmarkbtn:
-                changeListType(PostListTypeHelper.MY_BOOKMARKS, view);
-                break;
-
-            case R.id.mylikesbtn:
-                changeListType(PostListTypeHelper.MY_LIKES, view);
-                break;
-
-            case R.id.mywiresbtn:
-                changeListType(PostListTypeHelper.MY_WIRES, view);
-                break;
-
-
-            case R.id.customizefeedbtn:
-                Intent intent1 = new Intent(incourtLauncherActivity, CustomizeFeedActivity.class);
-                incourtLauncherActivity.startActivity(intent1);
-                break;
+//            case in.incourt.incourtnews.R.id.searchtext1:
+//                openSearchActivity();
+//                break;
+//
+//            case R.id.bookmarkbtn:
+//                changeListType(PostListTypeHelper.MY_BOOKMARKS, view);
+//                break;
+//
+//            case R.id.mylikesbtn:
+//                changeListType(PostListTypeHelper.MY_LIKES, view);
+//                break;
+//
+//            case R.id.mywiresbtn:
+//                changeListType(PostListTypeHelper.MY_WIRES, view);
+//                break;
+//
+//
+//            case R.id.customizefeedbtn:
+//                Intent intent1 = new Intent(incourtLauncherActivity, CustomizeFeedActivity.class);
+//                incourtLauncherActivity.startActivity(intent1);
+//                break;
 
         }
     }
@@ -127,10 +127,10 @@ public class CategoryPageLayout implements View.OnClickListener, CategoryButtonH
     @Override
     public void setActivatedButtonForFalse(@Nullable View view, boolean flag) {
 
-        itemView.findViewById(R.id.bookmarkbtn).setActivated(false);
-        itemView.findViewById(R.id.mylikesbtn).setActivated(false);
-        itemView.findViewById(R.id.mywiresbtn).setActivated(false);
-        itemView.findViewById(R.id.customizefeedbtn).setActivated(false);
+//        itemView.findViewById(R.id.bookmarkbtn).setActivated(false);
+//        itemView.findViewById(R.id.mylikesbtn).setActivated(false);
+//        itemView.findViewById(R.id.mywiresbtn).setActivated(false);
+//        itemView.findViewById(R.id.customizefeedbtn).setActivated(false);
 
         CategoryButtonHelper.changeStateToDeActive((LinearLayout) itemView.findViewById(R.id.category_buttons_main_fragments));
         CategoryButtonHelper.changeStateToDeActive((LinearLayout) itemView.findViewById(R.id.topic_buttons_main_fragments));

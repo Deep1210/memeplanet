@@ -100,162 +100,162 @@
                     android:paddingTop="25dp">
 
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingRight="8dp"
-                        android:paddingLeft="8dp"
-                        android:layout_marginBottom="10dp"
-                        android:orientation="horizontal">
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:paddingRight="8dp"-->
+<!--                        android:paddingLeft="8dp"-->
+<!--                        android:layout_marginBottom="10dp"-->
+<!--                        android:orientation="horizontal">-->
 
-                        <RelativeLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1">
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="1">-->
 
-                            <LinearLayout
-                                android:id="@+id/bookmarkbtn"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_centerInParent="true"
-                                android:orientation="vertical"
-                                tools:ignore="UseCompoundDrawables">
+<!--                            <LinearLayout-->
+<!--                                android:id="@+id/bookmarkbtn"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:orientation="vertical"-->
+<!--                                tools:ignore="UseCompoundDrawables">-->
 
-                                <ImageView
-                                    android:id="@+id/bookmarkimg"
-                                    android:layout_width="58dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:adjustViewBounds="true"
-                                    android:background="@drawable/border_navigation_buttons"
-                                    android:padding="12dp"
-                                    android:src="@drawable/ic_bookmar_c" />
+<!--                                <ImageView-->
+<!--                                    android:id="@+id/bookmarkimg"-->
+<!--                                    android:layout_width="58dp"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_gravity="center"-->
+<!--                                    android:adjustViewBounds="true"-->
+<!--                                    android:background="@drawable/border_navigation_buttons"-->
+<!--                                    android:padding="12dp"-->
+<!--                                    android:src="@drawable/ic_bookmar_c" />-->
 
-                                <TextView
-                                    android:id="@+id/bookmarktitle"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="4dp"
-                                    android:textColor="?attr/day_gray_text"
-                                    android:text="@string/bookmarks" />
-
-
-                            </LinearLayout>
+<!--                                <TextView-->
+<!--                                    android:id="@+id/bookmarktitle"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_marginTop="4dp"-->
+<!--                                    android:textColor="?attr/day_gray_text"-->
+<!--                                    android:text="@string/bookmarks" />-->
 
 
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1">
-
-                            <LinearLayout
-                                android:id="@+id/mywiresbtn"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_centerInParent="true"
-                                android:orientation="vertical">
-
-                                <ImageView
-                                    android:id="@+id/wireimg"
-                                    android:layout_width="58dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:adjustViewBounds="true"
-                                    android:background="@drawable/border_navigation_buttons"
-                                    android:padding="12dp"
-                                    android:src="?attr/W_C_Image" />
-
-                                <TextView
-                                    android:id="@+id/wiretitle"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="4dp"
-                                    android:textColor="?attr/day_gray_text"
-                                    android:text="@string/mywires" />
+<!--                            </LinearLayout>-->
 
 
-                            </LinearLayout>
+<!--                        </RelativeLayout>-->
+
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="1">-->
+
+<!--                            <LinearLayout-->
+<!--                                android:id="@+id/mywiresbtn"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:orientation="vertical">-->
+
+<!--                                <ImageView-->
+<!--                                    android:id="@+id/wireimg"-->
+<!--                                    android:layout_width="58dp"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_gravity="center"-->
+<!--                                    android:adjustViewBounds="true"-->
+<!--                                    android:background="@drawable/border_navigation_buttons"-->
+<!--                                    android:padding="12dp"-->
+<!--                                    android:src="?attr/W_C_Image" />-->
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/wiretitle"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_marginTop="4dp"-->
+<!--                                    android:textColor="?attr/day_gray_text"-->
+<!--                                    android:text="@string/mywires" />-->
 
 
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1">
+<!--                            </LinearLayout>-->
 
 
-                            <LinearLayout
-                                android:id="@+id/mylikesbtn"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_centerInParent="true"
-                                android:orientation="vertical">
+<!--                        </RelativeLayout>-->
 
-                                <ImageView
-                                    android:id="@+id/likeimg"
-                                    android:layout_width="58dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:adjustViewBounds="true"
-                                    android:background="@drawable/border_navigation_buttons"
-                                    android:padding="12dp"
-                                    android:src="@drawable/ic_heart" />
-
-                                <TextView
-                                    android:id="@+id/liketitle"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="4dp"
-                                    android:textColor="?attr/day_gray_text"
-                                    android:text="@string/mylikes" />
-
-                            </LinearLayout>
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1">
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="1">-->
 
 
-                            <LinearLayout
+<!--                            <LinearLayout-->
+<!--                                android:id="@+id/mylikesbtn"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:orientation="vertical">-->
 
-                                android:id="@+id/customizefeedbtn"
+<!--                                <ImageView-->
+<!--                                    android:id="@+id/likeimg"-->
+<!--                                    android:layout_width="58dp"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_gravity="center"-->
+<!--                                    android:adjustViewBounds="true"-->
+<!--                                    android:background="@drawable/border_navigation_buttons"-->
+<!--                                    android:padding="12dp"-->
+<!--                                    android:src="@drawable/ic_heart" />-->
 
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_centerInParent="true"
-                                android:orientation="vertical">
+<!--                                <TextView-->
+<!--                                    android:id="@+id/liketitle"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_marginTop="4dp"-->
+<!--                                    android:textColor="?attr/day_gray_text"-->
+<!--                                    android:text="@string/mylikes" />-->
 
-                                <ImageView
+<!--                            </LinearLayout>-->
+<!--                        </RelativeLayout>-->
 
-                                    android:id="@+id/customizefeedimg"
-
-                                    android:layout_width="58dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:adjustViewBounds="true"
-                                    android:background="@drawable/border_navigation_buttons"
-                                    android:padding="12dp"
-
-                                    android:src="@drawable/ic_user3" />
-
-                                <TextView
-                                    android:id="@+id/customizefeedtitle"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="4dp"
-                                    android:gravity="center"
-                                    android:textColor="?attr/day_gray_text"
-                                    android:text="Customize Feed" />
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="1">-->
 
 
-                            </LinearLayout>
-                        </RelativeLayout>
-                    </LinearLayout>
+<!--                            <LinearLayout-->
+
+<!--                                android:id="@+id/customizefeedbtn"-->
+
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_centerInParent="true"-->
+<!--                                android:orientation="vertical">-->
+
+<!--                                <ImageView-->
+
+<!--                                    android:id="@+id/customizefeedimg"-->
+
+<!--                                    android:layout_width="58dp"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_gravity="center"-->
+<!--                                    android:adjustViewBounds="true"-->
+<!--                                    android:background="@drawable/border_navigation_buttons"-->
+<!--                                    android:padding="12dp"-->
+
+<!--                                    android:src="@drawable/ic_user3" />-->
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/customizefeedtitle"-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_marginTop="4dp"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:textColor="?attr/day_gray_text"-->
+<!--                                    android:text="Customize Feed" />-->
+
+
+<!--                            </LinearLayout>-->
+<!--                        </RelativeLayout>-->
+<!--                    </LinearLayout>-->
 
 
                     <TextView
