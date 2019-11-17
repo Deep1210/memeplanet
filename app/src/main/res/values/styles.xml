@@ -1,0 +1,251 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="DayTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <!-- Customize your theme here. -->
+        <item name="primaryColor">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/clr_white</item>
+        <item name="android:textColorSecondary">@color/clr_white</item>
+        <item name="backgroundColor">@color/background_day</item>
+
+        <item name="ProfilePic">@drawable/ic_profilepic</item>
+        <item name="UserImage">@drawable/ic_user</item>
+        <item name="BackArrow_web">@drawable/ic_back</item>
+        <item name="BackArrow">@drawable/ic_back</item>
+        <item name="SettingImage">@drawable/ic_setting</item>
+        <item name="FacebookImage">@drawable/ic_facebook</item>
+        <item name="syncContactImage">@drawable/ic_contacts</item>
+        <item name="LanguageImage">@drawable/ic_language</item>
+        <item name="NotificationImage">@drawable/ic_notif</item>
+        <item name="hdImage">@drawable/ic_hdimages</item>
+        <item name="nightModeImage">@drawable/ic_nightmode</item>
+        <item name="MediImage">@drawable/ic_media</item>
+
+        <item name="SearchImage">@drawable/ic_search_black</item>
+        <item name="TopArrow">@drawable/ic_arrowtop</item>
+        <item name="MenuIcon">@drawable/ic_menuicon</item>
+
+        <item name="NotifImage">@drawable/ic_notif</item>
+        <item name="BookmarkImage">@drawable/ic_bookmar_night</item>
+        <item name="RefreshImage">@drawable/ic_refresh</item>
+        <item name="ShareImage">@drawable/ic_share</item>
+        <item name="W_Image">@drawable/ic_w</item>
+        <item name="W_C_Image">@drawable/ic_w_c</item>
+
+        <item name="incourt_text_logo_fbpage">@drawable/icon_incourt_text_logo</item>
+        <item name="incourt_logo_fbpage">@drawable/incourt_logo</item>
+        <item name="wire_logo_fbpage">@drawable/icon_wire_logo</item>
+        <item name="copyright_issues_color">@color/category_button_night_background</item>
+
+
+        <!-- App Background colors -->
+        <item name="app_background_color">@color/app_background_color_day</item>
+
+        <!-- Category And Topic button -->
+        <item name="category_serach_background_color">@color/day_white</item>
+        <item name="category_title_text">@color/category_title_text_color_day</item>
+        <item name="category_button_text_color">@color/day_gray_text</item>
+        <item name="category_button_stroke">@color/category_button_day_stroke</item>
+
+
+        <item name="category_view_more_color">@color/category_view_more_day</item>
+
+        <!--- ALL the item tag are mention above depricated -->
+
+        <item name="color_white">@color/day_white</item>
+        <item name="color_gray">@color/day_gray</item>
+        <item name="day_gray_text">@color/day_gray_text</item>
+        <item name="setting_line_breaker_color">@color/bs_divider_color</item>
+        <item name="post_time">@color/day_light_gray_text</item>
+
+        <item name="category_button_background">@color/day_white</item>
+        <item name="category_button_background_enable">@color/night_black</item>
+        <item name="category_button_storke">@color/day_gray</item>
+
+        <item name="setting_top_background_color">@color/day_white</item>
+        <item name="setting_top_text_color">@color/day_dark_black_text</item>
+        <item name="toggle_button_color">@color/night_white_backgound_text</item>
+
+        <item name="setting_list_clearall_text_color">@color/clr_black</item>
+        <item name="setting_list_text_color">@color/day_gray_text</item>
+        <item name="android:typeface">serif</item>
+
+        <item name="app_background_black_color">@color/day_dark_black_text</item>
+        <item name="bookmark_icon">@drawable/state_bookmark_button_night</item>
+        <item name="nolike_icon">@drawable/icon_nolikes</item>
+        <item name="nowire_icon">@drawable/icon_nowire</item>
+        <item name="norecord_icon">@drawable/icon_norecord</item>
+        <item name="ninternet_icon">@drawable/icon_no_internet</item>
+        <item name="nomorestories_icon">@drawable/icon_nomore_stories</item>
+
+        <item name="no_bookmark_icon_image">@drawable/icon_nobookmark_n</item>
+
+        <item name="top_bar_active_color">@color/clr_white</item>
+
+        <item name="category_button_text_color_selected">@color/clr_white</item>
+
+    </style>
+
+    <style name="DayTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="DayTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!-- Base application theme. -->
+    <style name="NightTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorSecondary</item>
+        <item name="colorPrimaryDark">@color/colorSecondaryDark</item>
+        <item name="colorAccent">@color/colorAccentSecondary</item>
+        <item name="android:textColorPrimary">@color/clr_whiteSecondary</item>
+        <item name="android:textColorSecondary">@color/clr_whiteSecondary</item>
+        <item name="backgroundColor">@color/background_night</item>
+        <item name="ProfilePic">@drawable/ic_profilepic</item>
+        <item name="UserImage">@drawable/ic_user_n</item>
+        <item name="BackArrow_web">@drawable/ic_back_n</item>
+        <item name="BackArrow">@drawable/ic_back_n</item>
+        <item name="SettingImage">@drawable/ic_setting_n</item>
+        <item name="FacebookImage">@drawable/ic_facebook</item>
+        <item name="syncContactImage">@drawable/ic_contacts</item>
+        <item name="LanguageImage">@drawable/ic_language</item>
+        <item name="NotificationImage">@drawable/ic_notif_n</item>
+        <item name="hdImage">@drawable/ic_hdimages</item>
+        <item name="nightModeImage">@drawable/ic_nightmode</item>
+        <item name="MediImage">@drawable/ic_media</item>
+
+        <item name="SearchImage">@drawable/ic_search_black_n</item>
+        <item name="TopArrow">@drawable/ic_arrowtop_n</item>
+        <item name="MenuIcon">@drawable/ic_menuicon_n</item>
+
+
+        <item name="NotifImage">@drawable/ic_notif_n</item>
+        <item name="BookmarkImage">@drawable/ic_bookmarked_day</item>
+        <item name="RefreshImage">@drawable/ic_refresh_n</item>
+        <item name="ShareImage">@drawable/ic_share_n</item>
+        <item name="W_Image">@drawable/ic_w_n</item>
+        <item name="W_C_Image">@drawable/ic_w_c</item>
+
+        <item name="bookmark_icon">@drawable/state_bookmark_button_day</item>
+        <item name="nolike_icon">@drawable/icon_nolikes_n</item>
+        <item name="nowire_icon">@drawable/icon_nowire_n</item>
+        <item name="norecord_icon">@drawable/icon_norecord_n</item>
+        <item name="ninternet_icon">@drawable/icon_no_internet_n</item>
+        <item name="nomorestories_icon">@drawable/icon_nomore_stories_n</item>
+        <item name="no_bookmark_icon_image">@drawable/icon_nobookmark_n</item>
+
+
+        <item name="incourt_text_logo_fbpage">@drawable/icon_incourt_text_logo_n</item>
+        <item name="incourt_logo_fbpage">@drawable/incourt_logo_n</item>
+        <item name="wire_logo_fbpage">@drawable/icon_wire_logo_n</item>
+        <item name="copyright_issues_color">@color/clr_blue</item>
+
+        <!-- App Background colors -->
+        <item name="app_background_color">@color/app_background_color_day</item>
+
+        <!-- Category And Topic button -->
+        <item name="category_serach_background_color">
+            @color/category_serach_background_color_night
+        </item>
+        <item name="category_title_text">@color/category_title_text_color_night</item>
+        <item name="category_button_text_color">@color/category_button_night_text_color</item>
+        <item name="category_view_more_color">@color/category_view_more_night</item>
+
+        <item name="category_button_stroke">@color/category_button_night_stroke</item>
+
+        <!--- ALL the item tag are mention above depricated -->
+
+        <item name="color_white">@color/night_black</item>
+        <item name="color_gray">@color/night_gray_black</item>
+        <item name="day_gray_text">@color/night_gray_text</item>
+        <item name="setting_line_breaker_color">@color/day_gray_text</item>
+        <item name="post_time">@color/night_gray_text</item>
+
+        <item name="category_button_background">@color/night_gray_black</item>
+        <item name="category_button_background_enable">@color/day_white</item>
+        <item name="category_button_storke">@color/night_gray_text</item>
+
+        <item name="setting_top_background_color">@color/night_black</item>
+        <item name="setting_top_text_color">@color/night_white_backgound_text</item>
+        <item name="toggle_button_color">@color/night_white_backgound_text</item>
+
+        <item name="setting_list_clearall_text_color">@color/night_white_backgound_text</item>
+        <item name="setting_list_text_color">@color/night_white_backgound_text</item>
+        <item name="android:typeface">serif</item>
+
+        <item name="app_background_black_color">@color/day_dark_black_text</item>
+
+        <item name="top_bar_active_color">@color/clr_black</item>
+
+        <item name="category_button_text_color_selected">@color/clr_black</item>
+
+    </style>
+
+    <style name="NightTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="NightTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <!--Switch compat theme-->
+    <style name="SwitchCompatTheme">
+        <item name="colorControlActivated">#f00</item>
+    </style>
+
+    <style name="SwitchCompatStyle_notif">
+        <item name="android:thumb">@drawable/switch_thumb_notif</item>
+        <item name="trackTint">@color/switch_color</item>
+
+        <item name="android:background">@android:drawable/dialog_holo_light_frame</item>
+
+    </style>
+
+    <style name="SwitchCompatStyle_hdimages">
+        <item name="android:thumb">@drawable/switch_thumb_hdimage</item>
+        <item name="trackTint">@color/switch_color</item>
+    </style>
+
+    <style name="SwitchCompatStyle_nightmode">
+        <item name="android:thumb">@drawable/switch_thumb_night</item>
+        <item name="trackTint">@color/switch_color</item>
+    </style>
+
+    <style name="SwitchCompatStyle_wire">
+        <item name="android:thumb">@drawable/switch_thumb_wire</item>
+        <item name="trackTint">@color/switch_color</item>
+    </style>
+
+
+
+
+
+
+    <!--&lt;!&ndash;Drag activity theme&ndash;&gt;-->
+    <!--<style name="ThemeSwipeBack" parent="Theme.Swipe.Back">-->
+    <!--<item name="primaryColor">@color/colorPrimary</item>-->
+    <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--<item name="windowActionBar">false</item>-->
+    <!--<item name="windowNoTitle">true</item>-->
+    <!--</style>-->
+
+    <style name="incourt_show_case" parent="NightTheme">
+        <item name="backgroundColor">@color/clr_black</item>
+    </style>
+
+</resources>

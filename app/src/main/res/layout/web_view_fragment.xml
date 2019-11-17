@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/color_gray"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_custometoolbar_size"
+            android:background="?attr/setting_top_background_color"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/backarrow"
+                android:layout_width="@dimen/dim_icons_size"
+                android:layout_height="@dimen/dim_icons_size"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/dim_searchicon_padding"
+                android:src="?attr/BackArrow_web" />
+
+            <!--<TextView
+                android:id="@+id/address_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:maxLength="40"
+                android:text="https://google.com"
+                android:textColor="?attr/setting_top_text_color"
+                android:textSize="14sp"
+                android:singleLine="true" />
+                -->
+
+
+            <!--<ImageView
+                android:layout_width="@dimen/dim_icons_size"
+                android:layout_height="@dimen/dim_icons_size"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/dim_searchicon_padding"
+                android:src="@drawable/ic_setting" />
+            -->
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:progressDrawable="@drawable/bg_progress_bar_webview" />
+
+
+        <View style="@style/element_divider" />
+
+        <RelativeLayout
+            android:id="@+id/web_view_container_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:visibility="visible">
+
+            <WebView
+                android:id="@+id/web_view_container"
+                android:layout_width="match_parent"
+
+
+                android:layout_height="match_parent"
+                android:visibility="visible" />
+
+            <WebView
+                android:id="@+id/web_view_container2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+            </WebView>
+
+            <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:text="@string/hello_world"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <View
+        style="@style/element_divider_vertical_black"
+        android:layout_alignParentLeft="true" />
+
+
+
+
+</RelativeLayout>

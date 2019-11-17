@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.incourt.incourtnews">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:name="in.incourt.incourtnews.IncourtApplication"
+        android:allowBackup="true"
+        android:configChanges="fontScale"
+        android:icon="@mipmap/incourt_logo_new"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:theme="@style/DayTheme">
+
+        <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="true" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <meta-data
+            android:name="com.facebook.sdk.CodelessDebugLogEnabled"
+            android:value="true" />
+
+        <meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+            android:value="false"/>
+
+        <meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+            android:value="false"/>
+
+        <activity android:name="in.incourt.incourtnews.activities.IncourtLauncherActivity">
+
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:scrollbarAlwaysDrawHorizontalTrack="true" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+        <activity android:name="in.incourt.incourtnews.activities.SettingActivity" />
+        <activity android:name="in.incourt.incourtnews.activities.SearchActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="incourt_sql.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="1" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="in.incourt.incourtnews.core" />
+
+        <activity android:name="in.incourt.incourtnews.activities.Media_BloggersActivity" />
+        <activity android:name="in.incourt.incourtnews.activities.FacebookLoginActivity" />
+        <activity
+            android:name="in.incourt.incourtnews.activities.PartnershipActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="in.incourt.incourtnews.activities.UserAccountActivity" />
+        <activity
+            android:name="in.incourt.incourtnews.activities.ConfirmDetailActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="in.incourt.incourtnews.activities.ImageGalleryActivity" />
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name="in.incourt.incourtnews.activities.YouTubeActivity" />
+        <activity android:name=".activities.CustomizeFeedActivity" />
+        <activity android:name="in.incourt.incourtnews.activities.RateIncourt"/>
+    </application>
+
+</manifest>

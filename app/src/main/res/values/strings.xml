@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Meme Planet</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="str_wirenewsto">Wire News to friends</string>
+    <string name="str_wire">Wire</string>
+    <string name="str_admin">Admin</string>
+    <string name="str_customize_feed">Customize Feed</string>
+    <string name="str_facebook">Facebook Connect</string>
+    <string name="str_synccontact">Sync Contacts</string>
+    <string name="str_language">Language</string>
+    <string name="str_notification">Notifications</string>
+    <string name="str_hdimages">HD Image</string>
+    <string name="str_night">Night Mode</string>
+    <string name="str_invite">Invite your Friends</string>
+    <string name="str_rate">Rate the Incourt app</string>
+    <string name="str_feedback">Feedback</string>
+    <string name="str_terms">Terms and Conditions</string>
+    <string name="str_privacy">Privacy Policy</string>
+    <string name="channel_name">Channel</string>
+
+    <string name="facebook_app_id">325495034759991</string>
+    <string name="fb_login_protocol_scheme">fb325495034759991</string>
+  <!--  <string name="facebook_app_id">1775583382693628</string>-->
+    <string name="feedback_content">Feedback content</string>
+    <string name="feedback_content_title">Title here</string>
+
+
+    <string name="newscontent">The actor Tom Arnold has claimed to have video of Donald Trump using racist language, obscenities and denigrating his own son in outtakes of The Apprentice.
+
+“I have the outtakes to The Apprentice where he says every bad thing ever, every offensive, racist thing ever. It was him sitting in that chair saying the N-word, saying the C-word, calling his son a retard, just being so mean to his own children,” Arnold told the Seattle-based radio station KIRO.
+
+The actor and comedian said a contact from the reality TV show passed him the material before last month’s election, but he did not release it”"</string>
+
+
+    <string name="newstitle">Delhi court sends two</string>
+    <string name="str_media">For media &amp; bloggers</string>
+
+
+    <string name="loremipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s\, when an unknown printer.</string>
+
+
+    <string name="whypartnerwith">Why Partner with us?</string>
+    <string name="threaremany">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.\n\n
+    If you are going to use a passage of Lorem Ipsum, you need to be sure there isn\'t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</string>
+    <string name="yourcontentis">Your content is safe with us.</string>
+
+    <string name="copyright">Copyright issues</string>
+    <string name="letyourfriends">Let your friends know the news you like.</string>
+    <string name="cancel">Cancel</string>
+    <string name="partnership">Partnership</string>
+    <string name="confirmdetail">Confirm Detail</string>
+    <string name="send">Send</string>
+    <string name="done">Done</string>
+    <string name="name">Name*</string>
+    <string name="email">Email*</string>
+    <string name="website">Website*</string>
+    <string name="phonenum">Phone Number*</string>
+    <string name="phone">Phone</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="account">Account</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="mywires">My Wires</string>
+    <string name="mylikes">My Likes</string>
+    <string name="shareinterestingnews">Share interesting news with
+your friends, in one tap</string>
+
+
+</resources>

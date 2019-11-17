@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/color_gray"
+    android:orientation="vertical">
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clr_blank">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/searchview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:background="?attr/color_white">
+
+                <ImageView
+                    android:id="@+id/backarrow"
+                    android:layout_width="@dimen/dim_icons_size"
+                    android:layout_height="@dimen/dim_icons_size"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/clr_blank"
+                    android:paddingLeft="@dimen/dim_searchicon_padding"
+                    android:src="?attr/BackArrow" />
+
+
+                <RelativeLayout
+                    android:id="@+id/serch_layer"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_searchlayer_height"
+                    android:layout_margin="@dimen/dim_searchlayer_margin"
+                    android:layout_toLeftOf="@+id/img_setting"
+                    android:layout_toRightOf="@+id/backarrow"
+                    android:background="#00000000">
+
+                    <EditText
+                        android:id="@+id/searchtext"
+                        style="@style/category_page_edit_text"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="40dp"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionSearch" />
+
+
+                    <ImageView
+                        android:id="@+id/img_search"
+                        android:layout_width="@dimen/dim_icons_size"
+                        android:layout_height="@dimen/dim_icons_size"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dim_searchlayer_margin"
+                        android:paddingBottom="@dimen/dim_searchicon_padding"
+                        android:paddingLeft="@dimen/dim_searchicon_padding"
+                        android:paddingRight="-4dp"
+                        android:paddingTop="@dimen/dim_searchicon_padding"
+                        android:src="@drawable/ic_search" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/search_recent_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/searchview"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/recent_search_option"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/color_gray"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:id="@+id/recent_search_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="5dp"
+                        android:lineSpacingExtra="1dp"
+                        android:maxLines="2"
+                        android:text="Recent Searches "
+                        android:textColor="?attr/post_time"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+
+
+                    <TextView
+                        android:id="@+id/recent_search_clear_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:gravity="end|center_vertical"
+                        android:paddingRight="10dp"
+                        android:text="Clear All"
+                        android:textColor="?attr/setting_list_clearall_text_color"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recent_search_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tabsview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/searchview"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/color_gray"
+                    android:minHeight="?attr/actionBarSize"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@color/clr_blue"
+                    app:tabMode="fixed"
+
+                    app:tabSelectedTextColor="@color/clr_blue"
+                    app:tabTextColor="@color/clr_blue" />
+
+                <View style="@style/element_divider" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/searchpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tabLayout"
+                    android:background="@android:color/white" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginRight="-64dp"
+            android:background="@color/clr_black">
+
+            <in.incourt.incourtnews.newslist.pager.NewsListHorizontalViewPager
+                android:id="@+id/serach_news_list_vertical_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.design.widget.NavigationView>
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

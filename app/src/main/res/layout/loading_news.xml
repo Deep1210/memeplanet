@@ -1,0 +1,58 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/color_gray"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/loadingicon"
+            android:background="@drawable/loadingicon"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:text="Loading Memes"
+            android:textColor="@color/clr_blue"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+
+        <!--<TextView
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="6dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="00dp"
+            android:text="Loading trending stories..."
+            android:textColor="@color/clr_textcolor_dark"
+            android:textSize="16sp"
+            android:textStyle="bold" />-->
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

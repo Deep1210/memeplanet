@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#353535</color>
+    <color name="clr_background">#f4f4f4</color>
+    <color name="clr_white">#FFFFFF</color>
+    <color name="clr_blank">#00000000</color>
+    <color name="clr_black">#000000</color>
+    <color name="clr_textcolor_light">#b9b9b9</color>
+    <color name="clr_textcolor_dark">#353535</color>
+    <color name="clr_devider">#dddddd</color>
+    <color name="clr_blue">#2196f3</color>
+
+
+    <color name="colorSecondary">#000000</color>
+    <color name="colorSecondaryDark">#000000</color>
+    <color name="colorAccentSecondary">#ffffff</color>
+    <color name="clr_backgroundSecondary">#000000</color>
+    <color name="clr_whiteSecondary">#000000</color>
+    <color name="clr_blankSecondary">#ffffff</color>
+    <color name="clr_textcolor_lightSecondary">#f5f5f5</color>
+    <color name="clr_textcolor_darkSecondary">#f5f5f5</color>
+    <color name="clr_deviderSecondary">#EEEEEE</color>
+    <color name="clr_showcase">#af000000</color>
+
+    <color name="background_day">#f5f5f5</color>
+    <color name="background_night">#747272</color>
+
+
+    <!-- app background color -->
+    <color name="app_background_color_day">#F4F4F4</color>
+    <color name="app_background_color_night">#d21212</color>
+
+
+    <!-- Category and Topic background color -->
+
+    <color name="category_serach_background_color_day">#FFFFFF</color>
+    <color name="category_serach_background_color_night">#000000</color>
+    <color name="category_title_text_color_day">#353535</color>
+    <color name="category_title_text_color_night">#FFFFFF</color>
+
+    <color name="category_button_day_background">#FFFFFF</color>
+    <color name="category_button_day_text_color">#242424</color>
+
+    <color name="category_button_day_stroke">#F4F4F4</color>
+
+    <color name="category_button_night_stroke">#F5F5F5</color>
+
+    <color name="category_button_night_background">#000000</color>
+    <color name="category_button_night_text_color">#FFFFFF</color>
+
+    <color name="category_view_more_day">#000000</color>
+    <color name="category_view_more_night">#FFFFFF</color>
+
+    <!-- All the color are mention above are depricated -->
+
+    <color name="day_white">#FFFFFF</color>
+    <color name="day_gray">#F4F4F4</color>
+    <color name="day_gray_text">#747474</color>
+    <color name="day_light_gray_text">#b1b1b1</color>
+    <color name="day_black_gray_background_text">#383838</color>
+    <color name="day_dark_black_text">#000000</color>
+
+
+    <color name="night_black">#2A2A2A</color>
+    <color name="night_gray_black">#383838</color>
+    <color name="night_gray_text">#ffffff</color>
+    <color name="night_white_backgound_text">#FFFFFF</color>
+
+</resources>

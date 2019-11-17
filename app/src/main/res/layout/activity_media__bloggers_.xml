@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?><!--<com.liuguangqiang.swipeback.SwipeBackLayout--><!--xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:orientation="vertical"--><!--android:id="@+id/swipeBackLayout"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent">-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_custometoolbar_size"
+        android:background="?attr/setting_top_background_color">
+
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="@dimen/dim_icons_size"
+            android:layout_height="@dimen/dim_icons_size"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/dim_searchicon_padding"
+            android:src="?attr/BackArrow" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/str_media"
+            android:textColor="?attr/setting_top_text_color"
+            android:textSize="@dimen/dim_optiontext_size"
+            android:textStyle="normal" />
+    </RelativeLayout>
+    <View style="@style/element_divider"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="?attr/color_white"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/contentfirst"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="start"
+                android:lineSpacingExtra="10dp"
+                android:paddingTop="30dp"
+                android:text="InCourt not only delivers carefully curated content but also encourages public and media participation. We welcome media houses for association and special coverage. Also, we are keen on submissions from legal, business and student fraternity."
+                android:textColor="@color/clr_blue" />
+
+
+            <TextView
+                android:id="@+id/headingfirst"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="start"
+                android:lineSpacingExtra="5dp"
+                android:paddingTop="20dp"
+                android:text="@string/whypartnerwith"
+                android:textColor="@color/clr_blue"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contentsecond"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="start"
+                android:lineSpacingExtra="10dp"
+                android:paddingTop="12dp"
+                android:text="Since, we aim at bring about a change in how law is perceived,  legal humor, sarcasm, critics and zero boundary content will be highly appreciated and rewarded. You think something is wrong and you have a way out to suggest, InCourt will voice your opinion."
+                android:textColor="?attr/day_gray_text"/>
+
+            <TextView
+                android:id="@+id/headingsecond"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="start"
+                android:layout_marginTop="22dp"
+                android:lineSpacingExtra="10dp"
+                android:paddingTop="12dp"
+                android:text="Drop in your original thoughts, write ups, articles or news which you may want to get published and InCourt will cover it. "
+                android:textColor="?attr/day_gray_text"/>
+
+            <TextView
+                android:id="@+id/headingthird"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="start"
+                android:layout_marginTop="22dp"
+                android:lineSpacingExtra="10dp"
+                android:paddingTop="12dp"
+                android:text="For any association drop us a mail at: contact  info@incourt.in Give out your details or simply drop your name, address, occupation, current position, mobile number and purpose and our team shall get back to you."
+                android:textColor="?attr/day_gray_text"/>
+
+
+
+            <TextView
+                android:id="@+id/partnership_btn"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/border_locateme"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp"
+                android:text="@string/partnership"
+                android:textColor="@color/clr_white" />
+
+            <TextView
+                android:id="@+id/copyrightissues_btn"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/clr_blank"
+                android:gravity="center"
+                android:paddingLeft="35dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:paddingRight="35dp"
+                android:text="@string/copyright"
+                android:textColor="?attr/copyright_issues_color" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+
+
+
+
+
+

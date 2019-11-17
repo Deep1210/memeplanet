@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="primaryColor" format="reference" />
+    <attr name="backgroundColor" format="reference" />
+
+    <attr name="ProfilePic" format="reference" />
+    <attr name="UserImage" format="reference" />
+    <attr name="BackArrow_web" format="reference" />
+    <attr name="BackArrow" format="reference" />
+    <attr name="SettingImage" format="reference" />
+    <attr name="FacebookImage" format="reference" />
+    <attr name="syncContactImage" format="reference" />
+    <attr name="LanguageImage" format="reference" />
+    <attr name="NotificationImage" format="reference" />
+    <attr name="hdImage" format="reference" />
+    <attr name="nightModeImage" format="reference" />
+    <attr name="MediImage" format="reference" />
+
+    <attr name="TopArrow" format="reference" />
+    <attr name="SearchImage" format="reference" />
+    <attr name="MenuIcon" format="reference" />
+
+    <attr name="NotifImage" format="reference" />
+    <attr name="BookmarkImage" format="reference" />
+    <attr name="RefreshImage" format="reference" />
+    <attr name="ShareImage" format="reference" />
+    <attr name="W_Image" format="reference" />
+    <attr name="W_C_Image" format="reference" />
+
+    <attr name="categoryButtonBorderColor" format="reference" />
+    <attr name="categoryButtonBackgroundColor" format="reference" />
+    <attr name="categoryButtonTextColor" format="reference" />
+
+    <attr name="incourt_text_logo_fbpage" format="reference" />
+    <attr name="incourt_logo_fbpage" format="reference" />
+    <attr name="wire_logo_fbpage" format="reference" />
+
+    <attr name="color_white" format="reference" />
+    <attr name="color_gray" format="reference" />
+    <attr name="day_gray_text" format="reference" />
+    <attr name="setting_line_breaker_color" format="reference" />
+    <attr name="post_time" format="reference" />
+    <attr name="category_button_storke" format="reference" />
+    <attr name="setting_top_background_color" format="reference" />
+    <attr name="setting_top_text_color" format="reference" />
+    <attr name="toggle_button_color" format="reference" />
+
+    <attr name="border_color_top_below" format="reference"></attr>
+
+    <attr name="app_background_black_color" format="reference" />
+    <attr name="copyright_issues_color" format="reference" />
+    <attr name="bookmark_icon" format="reference" />
+    <attr name="no_bookmark_icon_image" format="reference" />
+    <attr name="nolike_icon" format="reference" />
+    <attr name="nowire_icon" format="reference" />
+    <attr name="norecord_icon" format="reference" />
+    <attr name="ninternet_icon" format="reference" />
+    <attr name="nomorestories_icon" format="reference" />
+
+
+    <declare-styleable name="UbuntuFont">
+        <attr name="font" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SmartTextView">
+        <attr name="justified" format="boolean"/>
+        <attr name="android:textAllCaps"/>
+        <attr name="android:textStyle"/>
+        <attr name="fontname" format="enum">
+            <enum name="thin" value="0"/>
+            <enum name="reg" value="1"/>
+            <enum name="thick" value="2"/>
+        </attr>
+    </declare-styleable>
+    <!-- category page edit text -->
+    <style name="category_page_edit_text">
+
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:background">?attr/color_gray</item>
+        <item name="android:hint">Search</item>
+        <item name="android:textColorHint">?attr/day_gray_text</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:text"></item>
+        <item name="android:radius">2dp</item>
+        <item name="android:enabled">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">?attr/day_gray_text</item>
+        <item name="android:textSize">@dimen/dim_text_size</item>
+        <item name="android:cacheColorHint">?attr/color_gray</item>
+
+    </style>
+
+
+    <attr name="app_background_color" format="reference" />
+
+    <style name="category_page_scroll_style">
+        <item name="android:background">?attr/app_background_color</item>
+    </style>
+
+
+    <attr name="category_serach_background_color" format="reference" />
+
+
+    <!--  Category button container -->
+    <style name="category_button_container">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+
+    <!-- category and topic button attrs -->
+    <attr name="category_button_text_color" />
+    <attr name="category_title_text" format="reference" />
+    <attr name="category_button_stroke" format="reference" />
+    <attr name="category_button_background" format="reference" />
+    <attr name="category_button_text_color_selected" format="reference" />
+    <attr name="category_button_background_enable" format="reference" />
+    <attr name="setting_list_text_color" format="reference" />
+    <attr name="setting_list_clearall_text_color" format="reference" />
+
+
+    <style name="category_title_text">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:layout_marginBottom">9sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/category_title_text</item>
+    </style>
+
+    <!-- category and topic button style -->
+    <style name="category_button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">?attr/day_gray_text</item>
+        <item name="android:paddingLeft">25dp</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:paddingRight">25dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:capitalize">words</item>
+        <item name="android:background">@drawable/category_button_background_shape</item>
+    </style>
+
+
+    <!-- partnership column style -->
+    <style name="partnership_edittext">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">?attr/day_gray_text</item>
+        <item name="android:textColorHint">?attr/day_gray_text</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingTop">@dimen/dim_partnership_column_space</item>
+        <item name="android:paddingBottom">@dimen/dim_partnership_column_space</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:capitalize">words</item>
+        <item name="android:background">@drawable/partnership_edittext_background_shape</item>
+    </style>
+
+
+    <attr name="category_view_more_color" format="reference" />
+
+    <style name="category_view_more_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">?attr/category_view_more_color</item>
+    </style>
+
+    <!--bottom layer icons-->
+    <style name="bottomicon">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">@dimen/dim_bottomlayer_iconpadding</item>
+    </style>
+
+    <!--top layer icons-->
+    <style name="topicon">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">1dp</item>
+    </style>
+
+    <!--post content text-->
+    <style name="postcontrnt_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:lineSpacingExtra">@dimen/dim_tewstext_linespacing</item>
+        <item name="android:alpha">0.8</item>
+        <item name="android:paddingTop">@dimen/dim_tewstext_padding_size</item>
+        <item name="android:paddingLeft">@dimen/dim_tewstext_padding_size</item>
+        <item name="android:paddingRight">@dimen/dim_tewstext_padding_size</item>
+        <item name="android:textColor">?attr/category_title_text</item>
+        <item name="android:textSize">@dimen/dim_text_size</item>
+    </style>
+
+    <!--post filled by text-->
+    <style name="filledby_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:alpha">1</item>
+        <item name="android:text">Filed By - </item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:paddingLeft">@dimen/dim_tewstext_padding_size</item>
+        <item name="android:textColor">?attr/post_time</item>
+    </style>
+
+    <style name="author_name_pubdate" parent="filledby_text">
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+    </style>
+
+    <!--post news title text-->
+    <style name="newstitle_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_toLeftOf">@+id/countlayer</item>
+        <item name="android:lineSpacingExtra">@dimen/dim_tewstext_linespacing</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:padding">@dimen/dim_tewstext_padding_size</item>
+        <item name="android:textColor">@color/clr_white</item>
+        <item name="android:textSize">@dimen/dim_newstitle_size</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <!--post background view-->
+    <style name="post_background">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <!--bottom layer background view-->
+    <style name="bottomlayer_background">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <!--top layer background view-->
+    <style name="toplayer_background">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">?attr/setting_top_background_color</item>
+        <item name="android:alpha">1</item>
+    </style>
+
+
+    <!--news type title text-->
+    <style name="news_type_title" parent="@style/Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_height">27dp</item>
+        <item name="android:background">@drawable/category_button_background_shape</item>
+        <item name="android:textColor">?attr/day_gray_text</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:capitalize">words</item>
+        <item name="android:state_active">true</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <!--all news title text-->
+    <style name="all_news_title">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:text">Meme</item>
+        <item name="android:textColor">?attr/category_title_text</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
+
+    <!--news count text-->
+    <style name="news_count">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:text">10 New</item>
+        <item name="android:textColor">?attr/category_title_text</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+
+    <style name="category_hide_container">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!--- Setting page style -->
+    <style name="setting_page_list_view">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="element_divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:maxHeight">0.3dp</item>
+        <item name="android:background">@drawable/divider</item>
+    </style>
+
+    <style name="element_divider_setting" parent="element_divider">
+        <item name="android:background">@drawable/divider_setting</item>
+    </style>
+
+    <style name="element_divider_vertical">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:maxHeight">0.3dp</item>
+        <item name="android:background">@color/clr_black</item>
+    </style>
+
+    <style name="element_divider_vertical2">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:maxHeight">0.3dp</item>
+        <item name="android:background">@drawable/divider</item>
+    </style>
+
+    <style name="element_divider_vertical_black" parent="element_divider_vertical2">
+        <item name="android:background">@drawable/divider_black</item>
+    </style>
+
+    <style name="setting_view_page_text_color">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/dim_menutext_size</item>
+        <item name="android:textColor">?attr/day_gray_text</item>
+    </style>
+
+    <style name="setting_view_page_text_with_toggle_button" parent="setting_view_page_text_color">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="setting_view_page_text_color_with_marging" parent="setting_view_page_text_color">
+        <item name="android:layout_marginBottom">14dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">14dp</item>
+    </style>
+
+
+    <style name="setting_page_liner_with_divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:divider">@drawable/divider</item>
+        <item name="android:showDividers">end</item>
+        <item name="android:dividerPadding">5dp</item>
+    </style>
+
+    <attr name="top_bar_active_color" format="reference"></attr>
+
+
+
+</resources>

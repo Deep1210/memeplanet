@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/largeimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignBottom="@+id/largeimg"
+        android:background="@drawable/title_shadow" />
+
+
+    <LinearLayout
+        android:id="@+id/sharelayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:scaleX="-1"
+            android:src="@drawable/ic_shareicon" />
+
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/sharetext"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_alignBottom="@+id/post_news_title"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:paddingBottom="8dp"-->
+            <!--android:paddingLeft="1dp"-->
+            <!--android:paddingRight="8dp"-->
+            <!--android:paddingTop="8dp"-->
+            <!--android:text="Share"-->
+            <!--android:textColor="@color/clr_white"-->
+            <!--android:textSize="11sp" />-->
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/largeimg">
+
+        <TextView
+            android:id="@+id/post_news_title"
+            style="@style/newstitle_text"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/timetext"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
+
+        <TextView
+            android:id="@+id/timetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/post_news_title"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:text="05:45 PM"
+            android:textColor="@color/clr_white"
+            android:textSize="11sp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

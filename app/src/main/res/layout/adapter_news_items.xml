@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/color_gray"
+    android:orientation="vertical">
+
+    <View style="@style/element_divider" />
+
+
+    <LinearLayout
+        android:id="@+id/columnview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/color_gray"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/newsimg"
+            android:layout_width="85dp"
+            android:layout_height="70dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/girlimage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/newstitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:lineSpacingExtra="1dp"
+                android:maxLines="2"
+                android:text="Everyday with Virat Kohli is a learning experience, says Parvez Rasool"
+                android:textColor="?attr/setting_list_text_color"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:id="@+id/recent_search_news_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center_horizontal|bottom"
+                    android:lineSpacingExtra="1dp"
+                    android:paddingRight="8dp"
+                    android:textColor="?attr/post_time"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="19dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recent_serach_view_video_icon"
+                    android:visibility="invisible"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_type_video" />
+
+                <ImageView
+                    android:layout_width="19dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/multiple_image_icon"
+                    android:visibility="invisible"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/multiple_image_thumbnail_icon" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

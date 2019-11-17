@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/color_gray"
+    android:orientation="vertical"
+    app:layout_collapseParallaxMultiplier="1.0"
+    tools:context=".activities.UserAccountActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_custometoolbar_size"
+        android:background="?attr/setting_top_background_color">
+
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="@dimen/dim_profilepic_size"
+            android:layout_height="@dimen/dim_icons_size"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/dim_searchicon_padding"
+            android:src="?attr/BackArrow" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/account"
+            android:textColor="?attr/setting_top_text_color"
+            android:textSize="@dimen/dim_optiontext_size"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <View style="@style/element_divider" />
+
+
+    <LinearLayout
+        android:id="@+id/user_account_facebook_login_row"
+        style="@style/setting_page_list_view">
+
+        <LinearLayout
+            android:id="@+id/admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dim_account_column_padding"
+            android:paddingTop="@dimen/dim_account_column_padding">
+
+
+            <ImageView
+                android:id="@+id/user_profile_image"
+                android:layout_width="@dimen/dim_profilepic_size"
+                android:layout_height="@dimen/dim_profilepic_size"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp"
+                android:paddingLeft="6dp"
+                android:src="?attr/UserImage"/>
+
+
+            <TextView
+                android:id="@+id/login_user_name_text"
+                style="@style/setting_view_page_text_color"
+                android:text=""
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/logoutbtn"
+                    style="@style/setting_view_page_text_color"
+                    android:layout_alignParentRight="true"
+                    android:text="Logout"
+                    android:textColor="?attr/setting_top_text_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View style="@style/element_divider_setting" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/user_account_facebook_connect"
+        style="@style/setting_page_list_view">
+
+        <LinearLayout
+            android:id="@+id/facebook_connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dim_account_column_padding"
+            android:paddingTop="@dimen/dim_account_column_padding">
+
+            <ImageView
+                android:layout_width="@dimen/dim_icons_size"
+                android:layout_height="@dimen/dim_icons_size"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/dim_menuicon_margin"
+                android:padding="0dp"
+                android:src="@drawable/fbgmaillogo2" />
+
+            <TextView
+
+                android:id="@+id/facebook_connect_text"
+                style="@style/setting_view_page_text_color"
+                android:text="Login With"
+
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <View style="@style/element_divider_setting" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout style="@style/setting_page_list_view">
+
+        <LinearLayout
+            android:id="@+id/sync_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dim_account_column_padding"
+            android:paddingTop="@dimen/dim_account_column_padding">
+
+            <ImageView
+                android:layout_width="@dimen/dim_icons_size"
+                android:layout_height="@dimen/dim_icons_size"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/dim_menuicon_margin"
+                android:padding="0dp"
+                android:src="?attr/syncContactImage" />
+
+            <TextView
+                android:id="@+id/user_account_sync_text"
+                style="@style/setting_view_page_text_color"
+
+                android:text="@string/str_synccontact"
+
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/element_divider_setting" />
+
+
+    <LinearLayout style="@style/setting_page_list_view">
+
+        <LinearLayout
+            android:id="@+id/wire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dim_account_column_padding"
+            android:paddingTop="@dimen/dim_account_column_padding">
+
+            <ImageView
+                android:layout_width="@dimen/dim_icons_size"
+                android:layout_height="@dimen/dim_icons_size"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/dim_menuicon_margin"
+                android:padding="0dp"
+                android:src="@drawable/ic_w_grey" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/setting_view_page_text_color"
+                    android:text="@string/str_wire"
+
+                    android:textSize="16sp" />
+
+                <TextView
+                    style="@style/setting_view_page_text_color"
+                    android:layout_marginTop="0dp"
+                    android:text="@string/str_wirenewsto"
+                    android:textColor="@color/clr_textcolor_light"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="2dp">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/toggle_notif"
+                    android:layout_centerInParent="true"
+android:layout_alignParentRight="true"
+                    style="@style/SwitchCompatStyle_wire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:button="@android:color/transparent"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp" />
+
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/element_divider_setting" />
+
+</LinearLayout>

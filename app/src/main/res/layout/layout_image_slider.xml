@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:clickable="false"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/galleryicon"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:alpha="1"
+        android:background="@drawable/border_playicon"
+        android:padding="6dp"
+        android:src="@drawable/ic_playbutton"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/images_galleryicon"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:alpha="1"
+        android:background="@drawable/border_playicon"
+        android:padding="8dp"
+        android:src="@drawable/ic_icon"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/galleryview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#b4000000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true"
+                android:alpha="1"
+                android:background="@drawable/border_circule_border"
+                android:padding="23dp"
+                android:src="@drawable/ic_gallery_w"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="View Image Gallery"
+                android:textColor="@color/clr_white"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

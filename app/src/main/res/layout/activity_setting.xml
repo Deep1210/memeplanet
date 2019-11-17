@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.SettingActivity">
+
+
+    <!--COSTOM TOOLBAR-START-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_custometoolbar_size"
+        android:background="?attr/setting_top_background_color">
+
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="@dimen/dim_icons_size"
+            android:layout_height="@dimen/dim_icons_size"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/dim_searchicon_padding"
+            android:src="?attr/BackArrow" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Settings"
+            android:textColor="?attr/setting_top_text_color"
+            android:textSize="@dimen/dim_optiontext_size"
+            android:textStyle="bold" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/user_profile_image"
+            android:layout_width="@dimen/dim_profilepic_size"
+            android:layout_height="@dimen/dim_profilepic_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:padding="2dp"
+            android:src="?attr/UserImage"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="0dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout style="@style/setting_page_liner_with_divider">
+
+        <View style="@style/element_divider" />
+    </LinearLayout>
+
+    <!--COSTOM TOOLBAR-FINISH-->
+
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/color_gray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--FEED-->
+
+            <!--FACEBOOK-->
+            <LinearLayout style="@style/setting_page_list_view">
+
+                <LinearLayout
+                    android:id="@+id/setting_facebook_connect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dim_icons_size"
+                        android:layout_height="@dimen/dim_icons_size"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/dim_menuicon_margin"
+                        android:padding="1dp"
+                        android:src="@drawable/fbgmaillogo2" />
+
+                    <TextView
+                        style="@style/setting_view_page_text_color"
+                        android:text="Login With" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View style="@style/element_divider_setting" />
+
+            <!--SYNC CONTACT-->
+            <LinearLayout
+                android:id="@+id/contact_sync_row"
+                style="@style/setting_page_list_view">
+
+                <LinearLayout
+                    android:id="@+id/synccontact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dim_icons_size"
+                        android:layout_height="@dimen/dim_icons_size"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/dim_menuicon_margin"
+                        android:padding="1dp"
+                        android:src="?attr/syncContactImage" />
+
+                    <TextView
+                        style="@style/setting_view_page_text_color"
+                        android:text="@string/str_synccontact" />
+
+
+                </LinearLayout>
+
+                <View style="@style/element_divider_setting"></View>
+            </LinearLayout>
+
+
+            <!--NOTIFICATION-->
+            <LinearLayout
+                style="@style/setting_page_list_view"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dim_icons_size"
+                        android:layout_height="@dimen/dim_icons_size"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/dim_menuicon_margin"
+                        android:padding="1dp"
+                        android:src="@drawable/ic_bell_menu" />
+
+                    <TextView
+                        style="@style/setting_view_page_text_with_toggle_button"
+                        android:text="@string/str_notification" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical">
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/toggle_notif"
+                            style="@style/SwitchCompatStyle_notif"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:background="@android:color/transparent"
+                            android:button="@android:color/transparent"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/element_divider_setting" />
+
+            <!--HD IMAGES-->
+            <LinearLayout style="@style/setting_page_list_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="@dimen/dim_icons_size"
+                        android:layout_height="@dimen/dim_icons_size"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/dim_menuicon_margin"
+                        android:padding="1dp"
+                        android:src="?attr/hdImage" />
+
+                    <TextView
+                        style="@style/setting_view_page_text_with_toggle_button"
+                        android:text="@string/str_hdimages" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical">
+
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/toggle_hd_image"
+                            style="@style/SwitchCompatStyle_hdimages"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/element_divider_setting" />
+
+
+            <!--NIGHT MODE-->
+            <LinearLayout style="@style/setting_page_list_view">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dim_icons_size"
+                        android:layout_height="@dimen/dim_icons_size"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/dim_menuicon_margin"
+                        android:padding="1dp"
+                        android:src="?attr/nightModeImage" />
+
+                    <TextView
+                        style="@style/setting_view_page_text_with_toggle_button"
+                        android:text="@string/str_night" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical">
+
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/theme_change_toggle_button"
+                            style="@style/SwitchCompatStyle_nightmode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp" />
+
+
+                        <!--<ToggleButton-->
+                        <!--android:id="@+id/theme_change_toggle_button"-->
+                        <!--android:layout_width="42dp"-->
+                        <!--android:layout_height="25dp"-->
+                        <!--android:layout_marginRight="4sp"-->
+                        <!--android:background="@drawable/toggle_selecter"-->
+                        <!--android:text=""-->
+                        <!--android:textOff=""-->
+                        <!--android:textOn="" />-->
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View style="@style/element_divider_setting" />
+
+            <!--INVITE FRIENDS-->
+            <LinearLayout
+                android:id="@+id/invitefriends"
+                style="@style/setting_page_list_view">
+
+                <TextView
+                    style="@style/setting_view_page_text_color_with_marging"
+                    android:text="@string/str_invite" />
+            </LinearLayout>
+
+            <View
+
+                style="@style/element_divider_setting" />
+
+            <!--RATE THE COURT-->
+            <LinearLayout
+                android:id="@+id/rateincourt"
+                style="@style/setting_page_list_view">
+
+                <TextView
+                    style="@style/setting_view_page_text_color_with_marging"
+                    android:text="@string/str_rate" />
+            </LinearLayout>
+
+            <View style="@style/element_divider_setting" />
+
+
+            <!--FEEDBACK-->
+            <LinearLayout
+                android:id="@+id/feedback"
+                style="@style/setting_page_list_view">
+
+                <TextView
+                    style="@style/setting_view_page_text_color_with_marging"
+                    android:text="@string/str_feedback" />
+            </LinearLayout>
+
+            <View style="@style/element_divider_setting" />
+
+
+            <!--TERMS AND CONDITION-->
+            <LinearLayout
+                android:id="@+id/termsconditions"
+                style="@style/setting_page_list_view">
+
+                <TextView
+                    style="@style/setting_view_page_text_color_with_marging"
+                    android:text="@string/str_terms" />
+            </LinearLayout>
+
+            <View style="@style/element_divider_setting" />
+
+
+            <!--PRIVACY POLICY-->
+            <LinearLayout
+                android:id="@+id/privacypolicy"
+                style="@style/setting_page_list_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/setting_view_page_text_color_with_marging"
+                        android:text="@string/str_privacy" />
+                </LinearLayout>
+
+                <View style="@style/element_divider_setting" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/setting_page_list_view">
+
+                <LinearLayout
+                    android:id="@+id/media_bloger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView style="@style/setting_view_page_text_color_with_marging"
+                        android:text="@string/str_media"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View style="@style/element_divider_setting"></View>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dim_searchlayer_margin">13dp</dimen>
+    <dimen name="dim_searchlayer_height">38dp</dimen>
+    <dimen name="dim_icons_size">30dp</dimen>
+    <dimen name="dim_profilepic_size">38dp</dimen>
+    <dimen name="dim_text_size">14sp</dimen>
+    <dimen name="dim_searchicon_padding">4sp</dimen>
+    <!--<dimen name="dim_deviderheight">0.8dp</dimen>-->
+    <dimen name="dim_bottomlayer_height">65dp</dimen>
+    <dimen name="dim_deviderheight">0.8dp</dimen>
+    <dimen name="dim_optiontext_size">20sp</dimen>
+    <dimen name="dim_custometoolbar_size">55dp</dimen>
+    <dimen name="dim_menuicon_margin">12dp</dimen>
+    <dimen name="dim_menutext_size">18sp</dimen>
+    <dimen name="dim_tewstext_padding_size">12dp</dimen>
+    <dimen name="dim_tewstext_linespacing">4dp</dimen>
+    <dimen name="dim_newstitle_size">15sp</dimen>
+    <dimen name="dim_bottomlayer_iconpadding">18dp</dimen>
+    <dimen name="dim_toplayer_icon_size">30dp</dimen>
+    <dimen name="dim_account_column_padding">6dp</dimen>
+    <dimen name="dim_partnership_margin_top">16dp</dimen>
+    <dimen name="dim_partnership_column_space">14dp</dimen>
+    <dimen name="dim_background_logo_width">200dp</dimen>
+    <dimen name="dim_cardviewradius">14dp</dimen>
+    <dimen name="dim_showcase_text">19sp</dimen>
+
+    <dimen name="design_navigation_icon_size">500dp</dimen>
+</resources>

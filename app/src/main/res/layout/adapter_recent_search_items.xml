@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/color_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/columnview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/color_gray"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/newstitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="1dp"
+            android:maxLines="2"
+            android:textColor="?attr/setting_list_text_color"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

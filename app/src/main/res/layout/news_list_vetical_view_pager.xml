@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:orientation="vertical">
+
+
+
+    <in.incourt.incourtnews.newslist.pager.NewsListVerticalViewPager
+        android:id="@+id/news_list_vertical_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:forceHasOverlappingRendering="true"
+        android:overScrollMode="ifContentScrolls" />
+
+    <in.incourt.incourtnews.showcase.SwipeLeft
+        android:id="@+id/swipeleft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <in.incourt.incourtnews.showcase.SwipeRight
+        android:id="@+id/swiperight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/top_bar_layout"
+        style="@style/toplayer_background"
+        android:visibility="visible"
+        android:alpha="0.9">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/top_bar_back_button"
+                style="@style/topicon"
+                android:layout_alignParentLeft="true"
+                android:src="?attr/MenuIcon"
+                android:layout_marginLeft="5dp"/>
+
+            <ImageView
+                android:id="@+id/top_bar_icon_search"
+                style="@style/topicon"
+                android:layout_alignParentRight="true"
+                android:padding="4dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/top_bar_new_count"
+                style="@style/news_count"
+                android:layout_toLeftOf="@+id/top_bar_icon_search"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/top_bar_news_to_top"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_toLeftOf="@+id/top_bar_new_count"
+                android:padding="6dp"
+                android:src="?attr/TopArrow"
+                android:visibility="invisible" />
+
+            <TextView
+                style="@style/all_news_title"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/top_bar_button_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/setting_top_background_color"
+            android:orientation="horizontal"
+            android:paddingBottom="6dp">
+
+
+<!--            <Button-->
+<!--                android:id="@+id/top_bar_my_feed_button"-->
+<!--                style="@style/news_type_title"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:minWidth="30dp"-->
+<!--                android:text="My Feed" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/top_bar_all_news_button"-->
+<!--                style="@style/news_type_title"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:minWidth="30dp"-->
+<!--                android:text="All News" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/top_bar_top_stories_button"-->
+<!--                style="@style/news_type_title"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:minWidth="30dp"-->
+<!--                android:text="Top Stories" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/top_bar_trending_button"-->
+<!--                style="@style/news_type_title"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:minWidth="30dp"-->
+<!--                android:text="Trending" />-->
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <in.incourt.incourtnews.showcase.DoYouknow
+        android:id="@+id/doyouknow"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_image_gallery"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/app_background_black_color"
+    tools:context="com.tbionline.incourts.in.example.incourtdemo.activities.ImageGalleryActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/crossimg"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:padding="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_multiply" />
+
+            <TextView
+                android:id="@+id/gallery_view_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/day_white"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_centerVertical="true"
+        android:background="@color/clr_black"/>
+
+    <TextView
+        android:id="@+id/gallery_view_news_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:lineSpacingExtra="2dp"
+        android:textColor="@color/day_white" />
+
+
+</RelativeLayout>

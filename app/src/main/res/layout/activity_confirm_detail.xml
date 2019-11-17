@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_partnership"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/color_white"
+    android:orientation="vertical"
+    tools:context="com.tbionline.incourts.in.example.incourtdemo.activities.PartnershipActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_custometoolbar_size"
+        android:background="?attr/setting_top_background_color">
+
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="@dimen/dim_icons_size"
+            android:layout_height="@dimen/dim_icons_size"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/dim_searchicon_padding"
+            android:src="?attr/BackArrow" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/confirmdetail"
+            android:textColor="?attr/setting_top_text_color"
+            android:textSize="@dimen/dim_optiontext_size"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <View
+        style="@style/element_divider"
+        android:layout_below="@+id/toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="?attr/color_white"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <EditText
+            android:id="@+id/field_name"
+            style="@style/partnership_edittext"
+            android:layout_marginTop="40dp"
+            android:hint="@string/name" />
+
+        <EditText
+            android:id="@+id/field_email"
+            style="@style/partnership_edittext"
+            android:layout_marginTop="@dimen/dim_partnership_margin_top"
+            android:hint="@string/email" />
+
+        <EditText
+            android:id="@+id/field_phone_number"
+            style="@style/partnership_edittext"
+            android:layout_marginBottom="28dp"
+            android:layout_marginTop="@dimen/dim_partnership_margin_top"
+            android:inputType="phone"
+            android:hint="@string/phonenum" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/contact_sync_error"
+            android:text="Please give permission for sync!"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:textColor="#801001"/>
+        <TextView
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"
+
+            android:background="@drawable/border_locateme"
+            android:gravity="center"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:text="@string/send"
+            android:textColor="@color/clr_white"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

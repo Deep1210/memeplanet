@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="?attr/color_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/border_fragments">
+
+
+    <!--SEARCH LAYER-START-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:background="?attr/color_white">
+
+           <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:background="?attr/color_white">
+
+                   <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp">
+
+                    <RelativeLayout
+                        android:id="@+id/serch_layer"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_searchlayer_height"
+                        android:layout_margin="@dimen/dim_searchlayer_margin"
+                        android:layout_toLeftOf="@+id/img_setting"
+                        android:background="@drawable/border_search">
+
+                        <TextView
+                            android:id="@+id/searchtext1"
+                            android:gravity="center_vertical"
+                            android:layout_centerVertical="true"
+
+                            style="@style/category_page_edit_text" />
+
+
+                        <ImageView
+                            android:id="@+id/img_search"
+                            android:layout_width="@dimen/dim_icons_size"
+                            android:layout_height="@dimen/dim_icons_size"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/dim_searchlayer_margin"
+                            android:paddingBottom="@dimen/dim_searchicon_padding"
+                            android:paddingLeft="@dimen/dim_searchicon_padding"
+                            android:paddingRight="-4dp"
+                            android:paddingTop="@dimen/dim_searchicon_padding"
+                            android:src="@drawable/ic_search" />
+
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/img_setting"
+                        android:layout_width="@dimen/dim_icons_size"
+                        android:layout_height="@dimen/dim_icons_size"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dim_searchlayer_margin"
+                        android:src="?attr/SettingImage" />
+                </RelativeLayout>
+            </RelativeLayout>
+    </RelativeLayout>
+
+            <View style="@style/element_divider" />
+            <!--SEARCH LAYER-FINISH-->
+
+            <in.incourt.incourtnews.layouts.BounceScrollView
+                style="category_page_scroll_style"
+                android:layout_width="match_parent"
+                android:fadingEdge="none"
+                android:requiresFadingEdge="none"
+                android:overScrollMode="never"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="25dp"
+                    android:paddingTop="25dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:id="@+id/bookmarkbtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical"
+                                tools:ignore="UseCompoundDrawables">
+
+                                <ImageView
+                                    android:id="@+id/bookmarkimg"
+                                    android:layout_width="58dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/border_navigation_buttons"
+                                    android:padding="12dp"
+                                    android:src="@drawable/ic_bookmar_c" />
+
+                                <TextView
+                                    android:id="@+id/bookmarktitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:textColor="?attr/day_gray_text"
+                                    android:text="@string/bookmarks" />
+
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:id="@+id/mywiresbtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/wireimg"
+                                    android:layout_width="58dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/border_navigation_buttons"
+                                    android:padding="12dp"
+                                    android:src="?attr/W_C_Image" />
+
+                                <TextView
+                                    android:id="@+id/wiretitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:textColor="?attr/day_gray_text"
+                                    android:text="@string/mywires" />
+
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+
+                            <LinearLayout
+                                android:id="@+id/mylikesbtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/likeimg"
+                                    android:layout_width="58dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/border_navigation_buttons"
+                                    android:padding="12dp"
+                                    android:src="@drawable/ic_heart" />
+
+                                <TextView
+                                    android:id="@+id/liketitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:textColor="?attr/day_gray_text"
+                                    android:text="@string/mylikes" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+
+                            <LinearLayout
+
+                                android:id="@+id/customizefeedbtn"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical">
+
+                                <ImageView
+
+                                    android:id="@+id/customizefeedimg"
+
+                                    android:layout_width="58dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/border_navigation_buttons"
+                                    android:padding="12dp"
+
+                                    android:src="@drawable/ic_user3" />
+
+                                <TextView
+                                    android:id="@+id/customizefeedtitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:gravity="center"
+                                    android:textColor="?attr/day_gray_text"
+                                    android:text="Customize Feed" />
+
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                    <TextView
+                        style="@style/category_title_text"
+                        android:layout_marginTop="18dp"
+                        android:textStyle="normal"
+                        android:text="Categories" />
+
+                    <LinearLayout
+                        android:id="@+id/category_buttons_main_fragments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/category_title_text"
+                        android:layout_marginTop="18dp"
+                        android:textStyle="normal"
+                        android:text="Tags" />
+
+                    <LinearLayout
+                        android:id="@+id/topic_buttons_main_fragments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </in.incourt.incourtnews.layouts.BounceScrollView>
+
+
+        </LinearLayout>
+
+        <View style="@style/element_divider_vertical_black"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

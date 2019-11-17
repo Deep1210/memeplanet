@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "955645633538",
+    "firebase_url": "https://incourtlegal-8f545.firebaseio.com",
+    "project_id": "incourtlegal-8f545",
+    "storage_bucket": "incourtlegal-8f545.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955645633538:android:60dc6f52c98c53d9",
+        "android_client_info": {
+          "package_name": "in.incourt.incourtnews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955645633538-s8388tdol5nhi4bse0bdd5m2ekh51a8p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjuNkU-HDdZO06DzJ4L2qk8ZKhj5PGsVQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

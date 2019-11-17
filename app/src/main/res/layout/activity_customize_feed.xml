@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/color_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_custometoolbar_size"
+        android:background="?attr/setting_top_background_color">
+
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="@dimen/dim_icons_size"
+            android:layout_height="@dimen/dim_icons_size"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/dim_searchicon_padding"
+            android:src="?attr/BackArrow"
+            android:onClick="setBackPressButton"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/str_customize_feed"
+            android:textColor="?attr/setting_top_text_color"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <View
+        style="@style/element_divider"
+        android:layout_below="@+id/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:text="Choose your Interests"
+            android:textColor="@color/clr_blue"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/category_buttons_main_fragments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/my_feed_interest_done_button"
+            android:layout_width="200dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/border_locateme"
+            android:gravity="center"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:text="@string/done"
+            android:textColor="@color/clr_white"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:text="Please Select at least 3"
+            android:textColor="@color/clr_blue"
+            android:textSize="18sp"/>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
