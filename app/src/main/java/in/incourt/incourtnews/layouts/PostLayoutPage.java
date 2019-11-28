@@ -2,7 +2,14 @@ package in.incourt.incourtnews.layouts;
 
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Point;
+import android.graphics.drawable.BitmapDrawable;
+import android.net.Uri;
+import android.os.Build;
+import android.os.Environment;
+import android.support.v4.content.FileProvider;
 import android.support.v4.view.ViewPager;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -14,6 +21,15 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.net.URL;
+import java.net.URLConnection;
+
+import in.incourt.incourtnews.BuildConfig;
 import in.incourt.incourtnews.FabricKpi.IncourtFabricSpeach;
 import in.incourt.incourtnews.IncourtApplication;
 import in.incourt.incourtnews.R;
@@ -34,6 +50,8 @@ import in.incourt.incourtnews.helpers.UserHelper;
 import in.incourt.incourtnews.helpers.interfaces.TextToSpeechInterface;
 import in.incourt.incourtnews.newslist.adapters.NewsListVerticalViewPagerAdapter;
 import in.incourt.incourtnews.newslist.pager.NewsListVerticalViewPager;
+
+import static in.incourt.incourtnews.helpers.IncourtShareNewsHelper.getView;
 
 /**
  * Created by bhavan on 2/14/17.
@@ -193,7 +211,7 @@ public class PostLayoutPage implements TextToSpeechInterface {
         itemView.findViewById(in.incourt.incourtnews.R.id.sharebtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                shareNewsPost(postsSql);
+                //shareNewsPost(postsSql);
             }
         });
 
@@ -217,7 +235,30 @@ public class PostLayoutPage implements TextToSpeechInterface {
         itemView.findViewById(in.incourt.incourtnews.R.id.bottom_wired_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               // postWiredStart(postsSql);
+
+                try {
+                    Bitmap bmp = null;
+                    URL url = new URL(String.valueOf(getNewsImage()));
+                    URLConnection conn = null;
+                    conn = url.openConnection();
+                    bmp = BitmapFactory.decodeStream(conn.getInputStream());
+                    File f = new File(Environment.getExternalStorageDirectory(),System.currentTimeMillis() + ".jpg");
+                    if(f.exists())
+                        f.delete();
+                    f.createNewFile();
+                    Bitmap bitmap = bmp;
+                    ByteArrayOutputStream bos = new ByteArrayOutputStream();
+                    bitmap.compress(Bitmap.CompressFormat.PNG, 0 /*ignored for PNG*/, bos);
+                    byte[] bitmapdata = bos.toByteArray();
+                    FileOutputStream fos = new FileOutputStream(f);
+                    fos.write(bitmapdata);
+                    fos.flush();
+                    fos.close();
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
             }
         });
 
@@ -305,6 +346,43 @@ public class PostLayoutPage implements TextToSpeechInterface {
         post_title_text.setTextColor(itemView.getResources().getColor(in.incourt.incourtnews.R.color.clr_white));
         itemView.findViewById(in.incourt.incourtnews.R.id.bottom_nav_bar_bookmarks_button).setActivated(false);
 
+
+    }
+
+
+    public Uri getNewsImage() {
+
+        getCurrentViewItem().setDrawingCacheEnabled(true);
+        getCurrentViewItem().buildDrawingCache(true);
+
+        if (getCurrentViewItem().findViewById(in.incourt.incourtnews.R.id.buttonslayer) != null) {
+            getCurrentViewItem().findViewById(in.incourt.incourtnews.R.id.buttonslayer).setVisibility(View.INVISIBLE);
+        }
+
+        if (getCurrentViewItem().findViewById(R.id.addview_layer) != null) {
+            getCurrentViewItem().findViewById(R.id.addview_layer).setVisibility(View.VISIBLE);
+        }
+
+        Bitmap bitmap = Bitmap.createScaledBitmap(getCurrentViewItem().getDrawingCache(), 720, 1280, false);
+
+        if (getCurrentViewItem().findViewById(R.id.addview_layer) != null) {
+            getCurrentViewItem().findViewById(R.id.addview_layer).setVisibility(View.INVISIBLE);
+        }
+
+        ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, bytes);
+        File f = new File(Environment.getExternalStorageDirectory() + File.separator + "352511083461145.jpg");
+        try {
+            f.createNewFile();
+            new FileOutputStream(f).write(bytes.toByteArray());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            return FileProvider.getUriForFile(getIncourtActivity().getApplicationContext(), BuildConfig.APPLICATION_ID + ".provider", f);
+        } else {
+            return Uri.fromFile(f);
+        }
     }
 
     public void shareNewsPost(PostsSql postsSql) {

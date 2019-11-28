@@ -233,7 +233,7 @@
                             android:layout_width="29dp"
                             android:layout_height="29dp"
                             android:layout_centerInParent="true"
-                            android:src="?attr/W_Image"
+                            android:src="@drawable/ic_file_download_black_24dp"
                             android:visibility="visible" />
 
                         <RelativeLayout
@@ -258,7 +258,7 @@
                                 android:layout_width="26dp"
                                 android:layout_height="26dp"
                                 android:padding="5dp"
-                                android:src="@drawable/ic_wired_cross"
+                                android:src="@drawable/ic_file_download_black_24dp"
                                 android:visibility="gone" />
 
 
