@@ -1,12 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:elevation="5dp"
+    app:cardCornerRadius="5dp"
+    android:padding="5dp"
+    android:layout_margin="3dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
 
     <Button
+        android:drawableTop="@drawable/incourt_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/category_button"
-        style="@style/category_button"
-        android:text="" />
+        android:text=""
+        android:capitalize="words"
+        android:singleLine="true"
+        android:textAllCaps="false"
+        />
 
-</LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

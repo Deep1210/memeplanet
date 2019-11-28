@@ -54,9 +54,9 @@ public class CategoryPageLayout implements View.OnClickListener, CategoryButtonH
          */
 
         categoryButtonHelper = new CategoryButtonHelper(itemView, this,"category");
-        topicButtonHelper = new TopicButtonHelper(itemView, this);
+       // topicButtonHelper = new TopicButtonHelper(itemView, this);
 
-        itemView.findViewById(R.id.img_setting).setOnClickListener(this);
+//        itemView.findViewById(R.id.img_setting).setOnClickListener(this);
 
 //        itemView.findViewById(R.id.searchtext1).setOnClickListener(this);
 //
@@ -82,10 +82,10 @@ public class CategoryPageLayout implements View.OnClickListener, CategoryButtonH
              * Setting Image Click
              */
 
-            case in.incourt.incourtnews.R.id.img_setting:
-                Intent intent = new Intent(incourtLauncherActivity, SettingActivity.class);
-                incourtLauncherActivity.startActivity(intent);
-                break;
+//            case in.incourt.incourtnews.R.id.img_setting:
+//                Intent intent = new Intent(incourtLauncherActivity, SettingActivity.class);
+//                incourtLauncherActivity.startActivity(intent);
+//                break;
 
             /**
              * Search Bar Click
@@ -195,7 +195,7 @@ public class CategoryPageLayout implements View.OnClickListener, CategoryButtonH
 
     public void reRedraw(){
         categoryButtonHelper.reDrawAllView();
-        topicButtonHelper.reDrawAllView();
+        //topicButtonHelper.reDrawAllView();
     }
 
     public static void setSeletedTagId(String tag){

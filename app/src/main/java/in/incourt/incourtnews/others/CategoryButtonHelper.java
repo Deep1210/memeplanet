@@ -1,6 +1,7 @@
 package in.incourt.incourtnews.others;
 
 import android.graphics.Color;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.ContextThemeWrapper;
@@ -77,6 +78,7 @@ public class CategoryButtonHelper implements View.OnClickListener{
         this.view = itemView;
         this.categoryButtonHelperInterface  = categoryButtonHelperInterface;
         this.from = from;
+        this.read_more = false;
         preInit();
     }
 
@@ -141,9 +143,12 @@ public class CategoryButtonHelper implements View.OnClickListener{
     }
 
     void viewSetUp(){
+        Log.e("",""+view.getResources().getDisplayMetrics().density);
+
+
         layoutParams = new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.WRAP_CONTENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT
+                (int) ((view.getResources().getDisplayMetrics().widthPixels/2.2)),
+                (int) ((view.getResources().getDisplayMetrics().widthPixels/2))
         );
 
         int marginInDpHorizonlal = (int) TypedValue.applyDimension(
@@ -173,7 +178,7 @@ public class CategoryButtonHelper implements View.OnClickListener{
                 lastInsert();
             }
         }
-        if(read_more_status && categoryViewMore != null) categoryViewMore.callOnClick();
+        //if(read_more_status && categoryViewMore != null) categoryViewMore.callOnClick();
     }
 
     void buttonInsert(){
@@ -269,23 +274,23 @@ public class CategoryButtonHelper implements View.OnClickListener{
     }
 
     void insertViewMore(){
-        rowContainer = new LinearLayout(categoryRowThemeWrapper);
-        ContextThemeWrapper viewMore = new ContextThemeWrapper(view.getContext(), R.style.category_view_more_button);
-        categoryViewMore = new TextView(viewMore);
-        categoryViewMore.setText("View More +");
-
-        categoryViewMore.setOnClickListener(this);
-        categoryViewMore.setId(R.id.category_view_more);
-        rowContainer.addView(categoryViewMore);
-        buttonfragmentcontainer.addView(rowContainer);
+        //rowContainer = new LinearLayout(categoryRowThemeWrapper);
+       // ContextThemeWrapper viewMore = new ContextThemeWrapper(view.getContext(), R.style.category_view_more_button);
+//        categoryViewMore = new TextView(viewMore);
+//        categoryViewMore.setText("View More +");
+//
+//        categoryViewMore.setOnClickListener(this);
+//        categoryViewMore.setId(R.id.category_view_more);
+//        rowContainer.addView(categoryViewMore);
+      //  buttonfragmentcontainer.addView(rowContainer);
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.category_view_more:
-                read_more_status = ViewHelpers.visibilityChange(hiddenContainer, categoryViewMore);
-                break;
+//            case R.id.category_view_more:
+//                read_more_status = ViewHelpers.visibilityChange(hiddenContainer, categoryViewMore);
+//                break;
             case R.id.category_list_button_click:
                 categoryButtonClick(view, (CategoriesSQL) view.getTag());
                 break;
